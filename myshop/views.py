@@ -1,19 +1,7 @@
 from django.shortcuts import render
-from .models import Shop, Item
+#from .models import Shop, Item
+from .models import Item
 
-
-def shop_list(request):
-    qs = Shop.objects.all()
-    return render(request, 'myshop/shop_list.html', {
-        'shop_list': qs,
-    })
-
-
-def shop_detail(request, pk):
-    shop = Shop.objects.get(pk=pk)
-    return render(request, 'myshop/shop_detail.html', {
-        'shop': shop,
-    })
 
 def item_list(request):
     # DB로부터 모든 Item List를 가져올 예정

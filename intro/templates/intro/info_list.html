@@ -1,0 +1,34 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <h1>My Info</h1>
+
+            <table class="table table-bordered table-hover">
+                {% for info in info_list %}
+                    <tr>
+                        <td>이름</td>
+                        <td>
+                            {{ info.name }}
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>직장</td>
+                        <td>{{ info.company }}</td>
+                    </tr>
+                    <tr>
+                        <td>부서</td>
+                        <td>{{ info.department }}</td>
+                    </tr>
+                    <tr></tr>
+                        <td>직업</td>
+                        <td>{{ info.job }}</td>
+                    </tr>
+                {% endfor %}
+                </table>
+
+            <a href="#" class="btn btn-primary">New Info</a>
+        </div>
+    </div>
+</div>
