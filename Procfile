@@ -1,1 +1,1 @@
-web: gunicorn django_20190411.wsgi --log-file -
+web: gunicorn pnu-hjkim.wsgi --log-file -
