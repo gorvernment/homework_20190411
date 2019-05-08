@@ -1,1 +1,0 @@
-web: gunicorn homework_20190411.wsgi --log-file -
